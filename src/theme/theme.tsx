@@ -6,19 +6,15 @@ import { IColors, IMode, ITheme } from 'types/Theme';
 import { breakpoints } from './breakpoints';
 
 const colorsLight: IColors = {
-  primary: '#f14e4ed3',
-  primaryHover: '#c42a2ad2',
-  secondary: '#252b3b',
-  secondaryHover: '#1b202b',
+  primary: '#013957',
+  secondary: '#35b9b6',
   light: '#fafafa',
   dark: '#000'
 };
 
 const colorsDark: IColors = {
-  primary: '#f14e4ed3',
-  primaryHover: '#c42a2ad2',
-  secondary: '#252b3b',
-  secondaryHover: '#1b202b',
+  primary: '#013957',
+  secondary: '#35b9b6',
   light: '#fafafa',
   dark: '#000'
 };
@@ -26,9 +22,7 @@ const colorsDark: IColors = {
 const modes: IMode = {
   light: {
     primary: colorsLight.primary,
-    primaryHover: colorsLight.primaryHover,
     secondary: colorsLight.secondary,
-    secondaryHover: colorsLight.secondaryHover,
     light: colorsLight.light,
     lightShade: rgba(colorsLight.light, 0.7),
     dark: colorsLight.dark,
@@ -39,9 +33,7 @@ const modes: IMode = {
   },
   dark: {
     primary: colorsDark.primary,
-    primaryHover: colorsDark.primaryHover,
     secondary: colorsDark.secondary,
-    secondaryHover: colorsDark.secondaryHover,
     light: colorsDark.light,
     lightShade: rgba(colorsDark.light, 0.7),
     dark: colorsDark.dark,
@@ -52,7 +44,7 @@ const modes: IMode = {
   }
 };
 
-export const theme: ITheme = {
+export const theme: Partial<ITheme> = {
   mode: 'dark',
   colors: modes,
   space: [0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 48, 52, 56, 60, 64],
