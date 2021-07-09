@@ -1,12 +1,17 @@
 import 'reset-css';
 import { StrictMode } from 'react';
 import { render } from 'react-dom';
+import ThemeProvider from 'theme/theme';
+import GlobalStyle from 'theme/globalStyle';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 render(
   <StrictMode>
-    <App />
+    <GlobalStyle />
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </StrictMode>,
   document.getElementById('root')
 );
