@@ -14,9 +14,7 @@ export interface Devices {
 
 export interface IColors {
   primary: string;
-  primaryHover: string;
   secondary: string;
-  secondaryHover: string;
   light: string;
   dark: string;
 }
@@ -24,9 +22,7 @@ export interface IColors {
 export interface IMode {
   [key: string]: {
     primary: string;
-    primaryHover: string;
     secondary: string;
-    secondaryHover: string;
     light: string;
     lightShade: string;
     dark: string;
